@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TC5Category" representedClassName="TC5Category" syncable="YES">
+        <attribute name="arSA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="csCZ" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="daDK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deDE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="elGR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enAU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enGB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enIE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enUS" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enZA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esES" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esMX" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fiFI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frCA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frFR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="huHU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itIT" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jaJP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="koKR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nlBE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nlNL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noNO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plPL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ptBR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ptPT" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roRO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruRU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skSK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="svSE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thTH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trTR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhCN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhTW" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TC5Conversation" representedClassName="TC5Conversation" syncable="YES">
+        <attribute name="arSA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="csCZ" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="daDK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deDE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="elGR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enAU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enGB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enIE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enUS" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enZA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esES" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esMX" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fiFI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frCA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="frFR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="huHU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itIT" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jaJP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="koKR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nlBE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nlNL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noNO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plPL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ptBR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ptPT" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roRO" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruRU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skSK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="svSE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thTH" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trTR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhCN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhHK" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zhTW" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TC5Conversation" positionX="-36" positionY="9" width="128" height="583"/>
+        <element name="TC5Category" positionX="0" positionY="198" width="128" height="568"/>
+    </elements>
+</model>
