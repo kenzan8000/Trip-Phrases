@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE8550F6CBBD4832A7864153 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204D6CA192D427CA7CAB512 /* libPods.a */; };
-		E6098B90197178EB00AF913C /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6098B8A197178EB00AF913C /* Icon-40@2x.png */; };
-		E6098B92197178EB00AF913C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6098B8C197178EB00AF913C /* Icon-60@2x.png */; };
-		E6098B94197178EB00AF913C /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6098B8E197178EB00AF913C /* Icon-Small@2x.png */; };
-		E6098B981971877600AF913C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6098B961971877600AF913C /* Default-568h@2x.png */; };
-		E6098B991971877600AF913C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6098B971971877600AF913C /* Default@2x.png */; };
 		E6098B9B19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6098B9A19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib */; };
 		E612937C198E35DE00CE138D /* TC5SettingSocialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E612937A198E35DE00CE138D /* TC5SettingSocialTableViewCell.m */; };
 		E612937D198E35DE00CE138D /* TC5SettingSocialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E612937B198E35DE00CE138D /* TC5SettingSocialTableViewCell.xib */; };
@@ -133,6 +128,7 @@
 		E67372F5195813CD00BB7C75 /* TC5ChooseLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67372F2195813CD00BB7C75 /* TC5ChooseLanguageViewController.m */; };
 		E694444A195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6944448195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m */; };
 		E694444B195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6944449195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib */; };
+		E6E094011AB5348300BF0CDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E094001AB5348300BF0CDD /* Images.xcassets */; };
 		E6E27155197341590088F41C /* TC5ConversationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E27154197341590088F41C /* TC5ConversationView.xib */; };
 		E6E4EB98196AD170000BFB97 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E4EB97196AD170000BFB97 /* CoreData.framework */; };
 		E6EF01BB19728DE0008E972A /* Category.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01B819728DE0008E972A /* Category.csv */; };
@@ -152,11 +148,6 @@
 
 /* Begin PBXFileReference section */
 		2204D6CA192D427CA7CAB512 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6098B8A197178EB00AF913C /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		E6098B8C197178EB00AF913C /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		E6098B8E197178EB00AF913C /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		E6098B961971877600AF913C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E6098B971971877600AF913C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E6098B9A19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5ChooseLanguageTableViewCellSelected.xib; sourceTree = "<group>"; };
 		E6129379198E35DE00CE138D /* TC5SettingSocialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC5SettingSocialTableViewCell.h; sourceTree = "<group>"; };
 		E612937A198E35DE00CE138D /* TC5SettingSocialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5SettingSocialTableViewCell.m; sourceTree = "<group>"; };
@@ -316,6 +307,7 @@
 		E6944447195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC5ChooseLanguageTableViewCell.h; sourceTree = "<group>"; };
 		E6944448195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5ChooseLanguageTableViewCell.m; sourceTree = "<group>"; };
 		E6944449195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5ChooseLanguageTableViewCell.xib; sourceTree = "<group>"; };
+		E6E094001AB5348300BF0CDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E6E27154197341590088F41C /* TC5ConversationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5ConversationView.xib; sourceTree = "<group>"; };
 		E6E4EB97196AD170000BFB97 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E6EF01B819728DE0008E972A /* Category.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Category.csv; sourceTree = "<group>"; };
@@ -356,9 +348,6 @@
 		E6098B88197178EB00AF913C /* Icon */ = {
 			isa = PBXGroup;
 			children = (
-				E6098B8A197178EB00AF913C /* Icon-40@2x.png */,
-				E6098B8C197178EB00AF913C /* Icon-60@2x.png */,
-				E6098B8E197178EB00AF913C /* Icon-Small@2x.png */,
 			);
 			path = Icon;
 			sourceTree = "<group>";
@@ -366,8 +355,6 @@
 		E6098B951971877600AF913C /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				E6098B961971877600AF913C /* Default-568h@2x.png */,
-				E6098B971971877600AF913C /* Default@2x.png */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -486,6 +473,7 @@
 			children = (
 				E673723E1956D06900BB7C75 /* Classes */,
 				E67372441956D06900BB7C75 /* Resources */,
+				E6E094001AB5348300BF0CDD /* Images.xcassets */,
 			);
 			path = "Travel Conversation";
 			sourceTree = "<group>";
@@ -763,6 +751,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Kenzan Hase";
 				TargetAttributes = {
+					E67372051956CCC000BB7C75 = {
+						DevelopmentTeam = 6RYZ4RB738;
+					};
 					E67372261956CCC100BB7C75 = {
 						TestTargetID = E67372051956CCC000BB7C75;
 					};
@@ -803,10 +794,8 @@
 				E67372B31957353600BB7C75 /* Language_th-TH.png in Resources */,
 				E6EF01BB19728DE0008E972A /* Category.csv in Resources */,
 				E6466B261984001700054F17 /* Good.csv in Resources */,
-				E6098B991971877600AF913C /* Default@2x.png in Resources */,
 				E64B86D619888E720015DDA6 /* Category_Greeting.png in Resources */,
 				E6EF01C019729B56008E972A /* ConversationCategory.csv in Resources */,
-				E6098B90197178EB00AF913C /* Icon-40@2x.png in Resources */,
 				E67372B01957353600BB7C75 /* Language_ru-RU.png in Resources */,
 				E67372AF1957353600BB7C75 /* Language_ro-RO.png in Resources */,
 				E67372A71957353600BB7C75 /* Language_ja-JP.png in Resources */,
@@ -815,7 +804,6 @@
 				E67372961957353600BB7C75 /* Language_da-DK.png in Resources */,
 				E67372B51957353600BB7C75 /* Language_zh-CN.png in Resources */,
 				E67372A01957353600BB7C75 /* Language_fi-FI.png in Resources */,
-				E6098B94197178EB00AF913C /* Icon-Small@2x.png in Resources */,
 				E67372CF1957496400BB7C75 /* TC5PhraseSectionTableViewCell.xib in Resources */,
 				E673729A1957353600BB7C75 /* Language_en-GB.png in Resources */,
 				E6473443199DC7BF00148C50 /* Language.csv in Resources */,
@@ -833,7 +821,6 @@
 				E673729B1957353600BB7C75 /* Language_en-IE.png in Resources */,
 				E67372B61957353600BB7C75 /* Language_zh-HK.png in Resources */,
 				E64B86DE19888E720015DDA6 /* Category_Transportation.png in Resources */,
-				E6098B92197178EB00AF913C /* Icon-60@2x.png in Resources */,
 				E67372B11957353600BB7C75 /* Language_sk-SK.png in Resources */,
 				E673729F1957353600BB7C75 /* Language_es-MX.png in Resources */,
 				E6466B271984001700054F17 /* Number.csv in Resources */,
@@ -849,8 +836,8 @@
 				E64B86DC19888E720015DDA6 /* Category_Shopping.png in Resources */,
 				E67372AC1957353600BB7C75 /* Language_pl-PL.png in Resources */,
 				E67372A11957353600BB7C75 /* Language_fr-CA.png in Resources */,
+				E6E094011AB5348300BF0CDD /* Images.xcassets in Resources */,
 				E64B86EB1988A4070015DDA6 /* Localization.csv in Resources */,
-				E6098B981971877600AF913C /* Default-568h@2x.png in Resources */,
 				E6098B9B19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib in Resources */,
 				E64B86DA19888E720015DDA6 /* Category_Question.png in Resources */,
 				E67372BC19573A1A00BB7C75 /* TC5PhraseTableViewCellOdd.xib in Resources */,
@@ -1070,12 +1057,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1084,13 +1075,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kenzan Hase (6RYZ4RB738)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "076CE132-6A7A-4A62-AD93-8799C24BCC8D";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
