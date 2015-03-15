@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B03F279-4084-4E22-AA9E-BB304D6DCEEB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Travel Conversation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>42F4D5C3C2C4BA3B26ABA246B4A72D5DE90CD66D</key>
+		<string>https://github.com/kenzan8000/Trip-Phrases.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Travel Conversation.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>42F4D5C3C2C4BA3B26ABA246B4A72D5DE90CD66D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kenzan8000/Trip-Phrases.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>42F4D5C3C2C4BA3B26ABA246B4A72D5DE90CD66D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>42F4D5C3C2C4BA3B26ABA246B4A72D5DE90CD66D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Travel%20Conversation</string>
+		</dict>
+	</array>
+</dict>
+</plist>
