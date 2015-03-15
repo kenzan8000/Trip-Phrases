@@ -7,6 +7,7 @@
 
 
 #pragma mark - synthesize
+@synthesize backgroundImageView;
 @synthesize fromLabel;
 @synthesize toLabel;
 @synthesize fromButton;
@@ -96,9 +97,11 @@
                      forState:UIControlStateNormal];
     [self.toButton setImage:[UIImage imageNamed:[NSString stringWithFormat:@"Language_%@.png", translatedLanguage]]
                    forState:UIControlStateNormal];
-    
+
     self.fromLabel.text = [[TC5LocalizationList sharedInstance] localizationWithEnglishKey:@"Native Language"];
     self.toLabel.text = [[TC5LocalizationList sharedInstance] localizationWithEnglishKey:@"Foreign language"];
+
+    //self.backgroundImageView.image = ;
 }
 
 

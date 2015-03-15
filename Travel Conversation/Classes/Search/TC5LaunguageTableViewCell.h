@@ -25,6 +25,7 @@
 
 
 #pragma mark - property
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImageView;
 @property (nonatomic, weak) IBOutlet UILabel *fromLabel;
 @property (nonatomic, weak) IBOutlet UILabel *toLabel;
 @property (nonatomic, weak) IBOutlet UIButton *fromButton;

@@ -13,7 +13,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // UI
         // bar color
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexadecimal:0x6880a0ff]];
+
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexadecimal:0x34495eff]];
     [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:@{
         NSForegroundColorAttributeName:[UIColor whiteColor],
     }
