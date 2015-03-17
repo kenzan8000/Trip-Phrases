@@ -163,6 +163,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
     if ([NSStringFromClass(self.cellClasses[indexPath.row]) isEqualToString:NSStringFromClass([TC5LaunguageTableViewCell class])]) {
         ((TC5LaunguageTableViewCell *)cell).delegate = self;
+        [[((TC5LaunguageTableViewCell *)cell) fromButton] setImageEdgeInsets:UIEdgeInsetsMake(10.0, (self.view.frame.size.width-320)/4+40.0, 34.0, (self.view.frame.size.width-320)/4+40.0)];
+        [[((TC5LaunguageTableViewCell *)cell) toButton] setImageEdgeInsets:UIEdgeInsetsMake(10.0, (self.view.frame.size.width-320)/4+40.0, 34.0, (self.view.frame.size.width-320)/4+40.0)];
     }
     else if ([NSStringFromClass(self.cellClasses[indexPath.row]) isEqualToString:NSStringFromClass([TC5PhraseTableViewCellOdd class])] ||
              [NSStringFromClass(self.cellClasses[indexPath.row]) isEqualToString:NSStringFromClass([TC5PhraseTableViewCellEven class])]) {
