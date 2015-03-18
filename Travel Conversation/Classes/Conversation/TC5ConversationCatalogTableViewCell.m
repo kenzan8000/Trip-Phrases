@@ -47,7 +47,7 @@
     [super layoutSubviews];
 
     CGRect frame = [self.conversationTitleLabel frame];
-    frame.size = CGSizeMake(240, 0);
+    frame.size = CGSizeMake(self.conversationTitleLabel.frame.size.width, 0);
     [self.conversationTitleLabel setFrame:frame];
     [self.conversationTitleLabel sizeToFit];
 }

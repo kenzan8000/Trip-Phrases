@@ -63,7 +63,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     NSString *text = [conversation nativeTitleText];
     return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
                                                            text:text
-                                                           size:CGSizeMake(240, MAXFLOAT)];
+                                                           size:CGSizeMake(self.tableView.frame.size.width-80/*240*/, MAXFLOAT)];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView

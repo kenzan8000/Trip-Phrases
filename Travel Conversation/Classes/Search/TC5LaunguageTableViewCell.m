@@ -100,8 +100,24 @@
 
     self.fromLabel.text = [[TC5LocalizationList sharedInstance] localizationWithEnglishKey:@"Native Language"];
     self.toLabel.text = [[TC5LocalizationList sharedInstance] localizationWithEnglishKey:@"Foreign language"];
+    self.fromLabel.layer.cornerRadius = 4;
+    self.fromLabel.clipsToBounds = YES;
+    self.toLabel.layer.cornerRadius = 4;
+    self.toLabel.clipsToBounds = YES;
 
-    //self.backgroundImageView.image = ;
+    {
+    UIImage *srcImage = [UIImage imageNamed:[NSString stringWithFormat:@"Scenery_%@.jpg", translatedLanguage]];
+    UIImage *dstImage = nil;
+    CGFloat ratio =  self.frame.size.height / self.frame.size.width;
+    CGFloat height = srcImage.size.width * ratio;
+    CGRect clipRect = CGRectMake(0, (srcImage.size.height - height) / 2.0f, srcImage.size.width, height);
+    CGImageRef cliped = CGImageCreateWithImageInRect(srcImage.CGImage, clipRect);
+    dstImage = [UIImage imageWithCGImage:cliped
+                                   scale:[[UIScreen mainScreen] scale]
+                             orientation:UIImageOrientationUp];
+    CGImageRelease(cliped);
+    self.backgroundImageView.image = dstImage;
+    }
 }
 
 
