@@ -78,6 +78,16 @@
 		E65066241989A70F0073F6F1 /* TC5SettingSoundTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E65066231989A70F0073F6F1 /* TC5SettingSoundTableViewCell.m */; };
 		E65066261989A7310073F6F1 /* TC5SettingSoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E65066251989A7310073F6F1 /* TC5SettingSoundTableViewCell.xib */; };
 		E65066281989D0930073F6F1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65066271989D0930073F6F1 /* MediaPlayer.framework */; };
+		E657D3E21ABA86CF00A66317 /* Scenery_id-ID.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3D81ABA86CF00A66317 /* Scenery_id-ID.jpg */; };
+		E657D3E31ABA86CF00A66317 /* Scenery_ja-JP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3D91ABA86CF00A66317 /* Scenery_ja-JP.jpg */; };
+		E657D3E41ABA86CF00A66317 /* Scenery_ko-KR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DA1ABA86CF00A66317 /* Scenery_ko-KR.jpg */; };
+		E657D3E51ABA86CF00A66317 /* Scenery_nl-BE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DB1ABA86CF00A66317 /* Scenery_nl-BE.jpg */; };
+		E657D3E61ABA86CF00A66317 /* Scenery_nl-NL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DC1ABA86CF00A66317 /* Scenery_nl-NL.jpg */; };
+		E657D3E71ABA86CF00A66317 /* Scenery_no-NO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DD1ABA86CF00A66317 /* Scenery_no-NO.jpg */; };
+		E657D3E81ABA86CF00A66317 /* Scenery_pl-PL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DE1ABA86CF00A66317 /* Scenery_pl-PL.jpg */; };
+		E657D3E91ABA86CF00A66317 /* Scenery_pt-PT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3DF1ABA86CF00A66317 /* Scenery_pt-PT.jpg */; };
+		E657D3EA1ABA86CF00A66317 /* Scenery_ro-RO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3E01ABA86CF00A66317 /* Scenery_ro-RO.jpg */; };
+		E657D3EB1ABA86CF00A66317 /* Scenery_ru-RU.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E657D3E11ABA86CF00A66317 /* Scenery_ru-RU.jpg */; };
 		E673720A1956CCC000BB7C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67372091956CCC000BB7C75 /* Foundation.framework */; };
 		E673720C1956CCC000BB7C75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673720B1956CCC000BB7C75 /* CoreGraphics.framework */; };
 		E673720E1956CCC000BB7C75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673720D1956CCC000BB7C75 /* UIKit.framework */; };
@@ -260,6 +270,16 @@
 		E65066231989A70F0073F6F1 /* TC5SettingSoundTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5SettingSoundTableViewCell.m; sourceTree = "<group>"; };
 		E65066251989A7310073F6F1 /* TC5SettingSoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5SettingSoundTableViewCell.xib; sourceTree = "<group>"; };
 		E65066271989D0930073F6F1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E657D3D81ABA86CF00A66317 /* Scenery_id-ID.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_id-ID.jpg"; sourceTree = "<group>"; };
+		E657D3D91ABA86CF00A66317 /* Scenery_ja-JP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_ja-JP.jpg"; sourceTree = "<group>"; };
+		E657D3DA1ABA86CF00A66317 /* Scenery_ko-KR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_ko-KR.jpg"; sourceTree = "<group>"; };
+		E657D3DB1ABA86CF00A66317 /* Scenery_nl-BE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_nl-BE.jpg"; sourceTree = "<group>"; };
+		E657D3DC1ABA86CF00A66317 /* Scenery_nl-NL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_nl-NL.jpg"; sourceTree = "<group>"; };
+		E657D3DD1ABA86CF00A66317 /* Scenery_no-NO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_no-NO.jpg"; sourceTree = "<group>"; };
+		E657D3DE1ABA86CF00A66317 /* Scenery_pl-PL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_pl-PL.jpg"; sourceTree = "<group>"; };
+		E657D3DF1ABA86CF00A66317 /* Scenery_pt-PT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_pt-PT.jpg"; sourceTree = "<group>"; };
+		E657D3E01ABA86CF00A66317 /* Scenery_ro-RO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_ro-RO.jpg"; sourceTree = "<group>"; };
+		E657D3E11ABA86CF00A66317 /* Scenery_ru-RU.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_ru-RU.jpg"; sourceTree = "<group>"; };
 		E67372061956CCC000BB7C75 /* Travel Conversation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Conversation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67372091956CCC000BB7C75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E673720B1956CCC000BB7C75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -406,6 +426,16 @@
 		E612CAA81AB9437B008E811D /* Scenery */ = {
 			isa = PBXGroup;
 			children = (
+				E657D3D81ABA86CF00A66317 /* Scenery_id-ID.jpg */,
+				E657D3D91ABA86CF00A66317 /* Scenery_ja-JP.jpg */,
+				E657D3DA1ABA86CF00A66317 /* Scenery_ko-KR.jpg */,
+				E657D3DB1ABA86CF00A66317 /* Scenery_nl-BE.jpg */,
+				E657D3DC1ABA86CF00A66317 /* Scenery_nl-NL.jpg */,
+				E657D3DD1ABA86CF00A66317 /* Scenery_no-NO.jpg */,
+				E657D3DE1ABA86CF00A66317 /* Scenery_pl-PL.jpg */,
+				E657D3DF1ABA86CF00A66317 /* Scenery_pt-PT.jpg */,
+				E657D3E01ABA86CF00A66317 /* Scenery_ro-RO.jpg */,
+				E657D3E11ABA86CF00A66317 /* Scenery_ru-RU.jpg */,
 				E612CAA91AB9437B008E811D /* Scenery_ar-SA.jpg */,
 				E612CAAA1AB9437B008E811D /* Scenery_cs-CZ.jpg */,
 				E612CAAB1AB9437B008E811D /* Scenery_da-DK.jpg */,
@@ -860,8 +890,10 @@
 				E612CAC01AB9437B008E811D /* Scenery_cs-CZ.jpg in Resources */,
 				E64B86D519888E720015DDA6 /* Category_Communication.png in Resources */,
 				E6EF01C119729B56008E972A /* Conversation.csv in Resources */,
+				E657D3E91ABA86CF00A66317 /* Scenery_pt-PT.jpg in Resources */,
 				E67372941957353600BB7C75 /* Language_ar-SA.png in Resources */,
 				E6E27155197341590088F41C /* TC5ConversationView.xib in Resources */,
+				E657D3E81ABA86CF00A66317 /* Scenery_pl-PL.jpg in Resources */,
 				E64B86DB19888E720015DDA6 /* Category_Restaurant.png in Resources */,
 				E64B86D919888E720015DDA6 /* Category_Number.png in Resources */,
 				E67372AD1957353600BB7C75 /* Language_pt-BR.png in Resources */,
@@ -879,10 +911,13 @@
 				E67372AB1957353600BB7C75 /* Language_no-NO.png in Resources */,
 				E67372AA1957353600BB7C75 /* Language_nl-NL.png in Resources */,
 				E67372961957353600BB7C75 /* Language_da-DK.png in Resources */,
+				E657D3EA1ABA86CF00A66317 /* Scenery_ro-RO.jpg in Resources */,
 				E612CAC91AB9437B008E811D /* Scenery_es-ES.jpg in Resources */,
 				E67372B51957353600BB7C75 /* Language_zh-CN.png in Resources */,
 				E67372A01957353600BB7C75 /* Language_fi-FI.png in Resources */,
 				E67372CF1957496400BB7C75 /* TC5PhraseSectionTableViewCell.xib in Resources */,
+				E657D3E51ABA86CF00A66317 /* Scenery_nl-BE.jpg in Resources */,
+				E657D3E31ABA86CF00A66317 /* Scenery_ja-JP.jpg in Resources */,
 				E673729A1957353600BB7C75 /* Language_en-GB.png in Resources */,
 				E6473443199DC7BF00148C50 /* Language.csv in Resources */,
 				E612CAC61AB9437B008E811D /* Scenery_en-IE.jpg in Resources */,
@@ -895,10 +930,12 @@
 				E612CAD11AB9437B008E811D /* Scenery_pt-BR.jpg in Resources */,
 				E694444B195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib in Resources */,
 				E67372971957353600BB7C75 /* Language_de-DE.png in Resources */,
+				E657D3EB1ABA86CF00A66317 /* Scenery_ru-RU.jpg in Resources */,
 				E612CACA1AB9437B008E811D /* Scenery_es-MX.jpg in Resources */,
 				E6466B251984001700054F17 /* Country.csv in Resources */,
 				E612937D198E35DE00CE138D /* TC5SettingSocialTableViewCell.xib in Resources */,
 				E64B86DF19888E720015DDA6 /* Category_Trouble.png in Resources */,
+				E657D3E41ABA86CF00A66317 /* Scenery_ko-KR.jpg in Resources */,
 				E6129385198E592B00CE138D /* TC5SettingLicenceTableViewCell.xib in Resources */,
 				E67372A21957353600BB7C75 /* Language_fr-FR.png in Resources */,
 				E673729B1957353600BB7C75 /* Language_en-IE.png in Resources */,
@@ -925,9 +962,11 @@
 				E67372A11957353600BB7C75 /* Language_fr-CA.png in Resources */,
 				E612CAC21AB9437B008E811D /* Scenery_de-DE.jpg in Resources */,
 				E6E094011AB5348300BF0CDD /* Images.xcassets in Resources */,
+				E657D3E61ABA86CF00A66317 /* Scenery_nl-NL.jpg in Resources */,
 				E612CABF1AB9437B008E811D /* Scenery_ar-SA.jpg in Resources */,
 				E64B86EB1988A4070015DDA6 /* Localization.csv in Resources */,
 				E6098B9B19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib in Resources */,
+				E657D3E21ABA86CF00A66317 /* Scenery_id-ID.jpg in Resources */,
 				E612CACF1AB9437B008E811D /* Scenery_hu-HU.jpg in Resources */,
 				E612CAC71AB9437B008E811D /* Scenery_en-US.jpg in Resources */,
 				E64B86DA19888E720015DDA6 /* Category_Question.png in Resources */,
@@ -947,6 +986,7 @@
 				E612CACD1AB9437B008E811D /* Scenery_fr-FR.jpg in Resources */,
 				E64B86D719888E720015DDA6 /* Category_Hotel.png in Resources */,
 				E67372E11957536F00BB7C75 /* TC5ConversationCatalogTableViewCell.xib in Resources */,
+				E657D3E71ABA86CF00A66317 /* Scenery_no-NO.jpg in Resources */,
 				E67372A31957353600BB7C75 /* Language_hi-IN.png in Resources */,
 				E612CAC51AB9437B008E811D /* Scenery_en-GB.jpg in Resources */,
 				E67372C9195746C300BB7C75 /* TC5PhraseTableViewCellEven.xib in Resources */,
