@@ -95,11 +95,6 @@
 		E673720A1956CCC000BB7C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67372091956CCC000BB7C75 /* Foundation.framework */; };
 		E673720C1956CCC000BB7C75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673720B1956CCC000BB7C75 /* CoreGraphics.framework */; };
 		E673720E1956CCC000BB7C75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673720D1956CCC000BB7C75 /* UIKit.framework */; };
-		E67372291956CCC100BB7C75 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67372281956CCC100BB7C75 /* XCTest.framework */; };
-		E673722A1956CCC100BB7C75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67372091956CCC000BB7C75 /* Foundation.framework */; };
-		E673722B1956CCC100BB7C75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E673720D1956CCC000BB7C75 /* UIKit.framework */; };
-		E67372331956CCC100BB7C75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E67372311956CCC100BB7C75 /* InfoPlist.strings */; };
-		E67372351956CCC100BB7C75 /* Travel_ConversationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E67372341956CCC100BB7C75 /* Travel_ConversationTests.m */; };
 		E67372471956D06900BB7C75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67372401956D06900BB7C75 /* AppDelegate.m */; };
 		E67372481956D06900BB7C75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67372411956D06900BB7C75 /* main.m */; };
 		E67372491956D06900BB7C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67372421956D06900BB7C75 /* Main.storyboard */; };
@@ -171,16 +166,6 @@
 		E6EF01C019729B56008E972A /* ConversationCategory.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01BE19729B56008E972A /* ConversationCategory.csv */; };
 		E6EF01C119729B56008E972A /* Conversation.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01BF19729B56008E972A /* Conversation.csv */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E673722C1956CCC100BB7C75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E67371FE1956CCC000BB7C75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E67372051956CCC000BB7C75;
-			remoteInfo = "Travel Conversation";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2204D6CA192D427CA7CAB512 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,7 +277,6 @@
 		E67372091956CCC000BB7C75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E673720B1956CCC000BB7C75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E673720D1956CCC000BB7C75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E67372271956CCC100BB7C75 /* Travel ConversationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Travel ConversationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67372281956CCC100BB7C75 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E67372301956CCC100BB7C75 /* Travel ConversationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Travel ConversationTests-Info.plist"; sourceTree = "<group>"; };
 		E67372321956CCC100BB7C75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -401,16 +385,6 @@
 				E673720E1956CCC000BB7C75 /* UIKit.framework in Frameworks */,
 				E673720A1956CCC000BB7C75 /* Foundation.framework in Frameworks */,
 				BE8550F6CBBD4832A7864153 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E67372241956CCC100BB7C75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E67372291956CCC100BB7C75 /* XCTest.framework in Frameworks */,
-				E673722B1956CCC100BB7C75 /* UIKit.framework in Frameworks */,
-				E673722A1956CCC100BB7C75 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +536,6 @@
 			isa = PBXGroup;
 			children = (
 				E67372061956CCC000BB7C75 /* Travel Conversation.app */,
-				E67372271956CCC100BB7C75 /* Travel ConversationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -840,24 +813,6 @@
 			productReference = E67372061956CCC000BB7C75 /* Travel Conversation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E67372261956CCC100BB7C75 /* Travel ConversationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E673723B1956CCC100BB7C75 /* Build configuration list for PBXNativeTarget "Travel ConversationTests" */;
-			buildPhases = (
-				E67372231956CCC100BB7C75 /* Sources */,
-				E67372241956CCC100BB7C75 /* Frameworks */,
-				E67372251956CCC100BB7C75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E673722D1956CCC100BB7C75 /* PBXTargetDependency */,
-			);
-			name = "Travel ConversationTests";
-			productName = "Travel ConversationTests";
-			productReference = E67372271956CCC100BB7C75 /* Travel ConversationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -869,9 +824,6 @@
 				TargetAttributes = {
 					E67372051956CCC000BB7C75 = {
 						DevelopmentTeam = 6RYZ4RB738;
-					};
-					E67372261956CCC100BB7C75 = {
-						TestTargetID = E67372051956CCC000BB7C75;
 					};
 				};
 			};
@@ -889,7 +841,6 @@
 			projectRoot = "";
 			targets = (
 				E67372051956CCC000BB7C75 /* Travel Conversation */,
-				E67372261956CCC100BB7C75 /* Travel ConversationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1014,14 +965,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E67372251956CCC100BB7C75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E67372331956CCC100BB7C75 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1103,23 +1046,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E67372231956CCC100BB7C75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E67372351956CCC100BB7C75 /* Travel_ConversationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E673722D1956CCC100BB7C75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E67372051956CCC000BB7C75 /* Travel Conversation */;
-			targetProxy = E673722C1956CCC100BB7C75 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E67372311956CCC100BB7C75 /* InfoPlist.strings */ = {
@@ -1167,7 +1094,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "9D752BE0-E34A-4C9D-A097-2A87E666F61D";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1199,7 +1126,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PROVISIONING_PROFILE = "076CE132-6A7A-4A62-AD93-8799C24BCC8D";
+				PROVISIONING_PROFILE = "37a2a5c4-117e-4f8c-b25e-6a1f6396b049";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1212,7 +1139,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
@@ -1229,55 +1155,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kenzan Hase (6RYZ4RB738)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "37a2a5c4-117e-4f8c-b25e-6a1f6396b049";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E673723C1956CCC100BB7C75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Travel Conversation.app/Travel Conversation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E673723D1956CCC100BB7C75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Travel Conversation.app/Travel Conversation";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
-				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1298,15 +1183,6 @@
 			buildConfigurations = (
 				E67372391956CCC100BB7C75 /* Debug */,
 				E673723A1956CCC100BB7C75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E673723B1956CCC100BB7C75 /* Build configuration list for PBXNativeTarget "Travel ConversationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E673723C1956CCC100BB7C75 /* Debug */,
-				E673723D1956CCC100BB7C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
