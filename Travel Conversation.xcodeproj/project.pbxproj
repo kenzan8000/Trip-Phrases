@@ -39,6 +39,10 @@
 		E612CAD21AB9437B008E811D /* Scenery_sk-SK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E612CABC1AB9437B008E811D /* Scenery_sk-SK.jpg */; };
 		E612CAD31AB9437B008E811D /* Scenery_th-TH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E612CABD1AB9437B008E811D /* Scenery_th-TH.jpg */; };
 		E612CAD41AB9437B008E811D /* Scenery_zh-HK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E612CABE1AB9437B008E811D /* Scenery_zh-HK.jpg */; };
+		E6437E6D1ABBB4CD003CD4A6 /* Scenery_sv-SE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6437E691ABBB4CD003CD4A6 /* Scenery_sv-SE.jpg */; };
+		E6437E6E1ABBB4CD003CD4A6 /* Scenery_tr-TR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6437E6A1ABBB4CD003CD4A6 /* Scenery_tr-TR.jpg */; };
+		E6437E6F1ABBB4CD003CD4A6 /* Scenery_zh-CN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6437E6B1ABBB4CD003CD4A6 /* Scenery_zh-CN.jpg */; };
+		E6437E701ABBB4CD003CD4A6 /* Scenery_zh-TW.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6437E6C1ABBB4CD003CD4A6 /* Scenery_zh-TW.jpg */; };
 		E6466B251984001700054F17 /* Country.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6466B201984001700054F17 /* Country.csv */; };
 		E6466B261984001700054F17 /* Good.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6466B211984001700054F17 /* Good.csv */; };
 		E6466B271984001700054F17 /* Number.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6466B221984001700054F17 /* Number.csv */; };
@@ -215,6 +219,10 @@
 		E612CABC1AB9437B008E811D /* Scenery_sk-SK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_sk-SK.jpg"; sourceTree = "<group>"; };
 		E612CABD1AB9437B008E811D /* Scenery_th-TH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_th-TH.jpg"; sourceTree = "<group>"; };
 		E612CABE1AB9437B008E811D /* Scenery_zh-HK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_zh-HK.jpg"; sourceTree = "<group>"; };
+		E6437E691ABBB4CD003CD4A6 /* Scenery_sv-SE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_sv-SE.jpg"; sourceTree = "<group>"; };
+		E6437E6A1ABBB4CD003CD4A6 /* Scenery_tr-TR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_tr-TR.jpg"; sourceTree = "<group>"; };
+		E6437E6B1ABBB4CD003CD4A6 /* Scenery_zh-CN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_zh-CN.jpg"; sourceTree = "<group>"; };
+		E6437E6C1ABBB4CD003CD4A6 /* Scenery_zh-TW.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenery_zh-TW.jpg"; sourceTree = "<group>"; };
 		E6466B201984001700054F17 /* Country.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Country.csv; sourceTree = "<group>"; };
 		E6466B211984001700054F17 /* Good.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Good.csv; sourceTree = "<group>"; };
 		E6466B221984001700054F17 /* Number.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Number.csv; sourceTree = "<group>"; };
@@ -426,6 +434,10 @@
 		E612CAA81AB9437B008E811D /* Scenery */ = {
 			isa = PBXGroup;
 			children = (
+				E6437E691ABBB4CD003CD4A6 /* Scenery_sv-SE.jpg */,
+				E6437E6A1ABBB4CD003CD4A6 /* Scenery_tr-TR.jpg */,
+				E6437E6B1ABBB4CD003CD4A6 /* Scenery_zh-CN.jpg */,
+				E6437E6C1ABBB4CD003CD4A6 /* Scenery_zh-TW.jpg */,
 				E657D3D81ABA86CF00A66317 /* Scenery_id-ID.jpg */,
 				E657D3D91ABA86CF00A66317 /* Scenery_ja-JP.jpg */,
 				E657D3DA1ABA86CF00A66317 /* Scenery_ko-KR.jpg */,
@@ -887,6 +899,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6437E6F1ABBB4CD003CD4A6 /* Scenery_zh-CN.jpg in Resources */,
 				E612CAC01AB9437B008E811D /* Scenery_cs-CZ.jpg in Resources */,
 				E64B86D519888E720015DDA6 /* Category_Communication.png in Resources */,
 				E6EF01C119729B56008E972A /* Conversation.csv in Resources */,
@@ -938,6 +951,7 @@
 				E657D3E41ABA86CF00A66317 /* Scenery_ko-KR.jpg in Resources */,
 				E6129385198E592B00CE138D /* TC5SettingLicenceTableViewCell.xib in Resources */,
 				E67372A21957353600BB7C75 /* Language_fr-FR.png in Resources */,
+				E6437E6D1ABBB4CD003CD4A6 /* Scenery_sv-SE.jpg in Resources */,
 				E673729B1957353600BB7C75 /* Language_en-IE.png in Resources */,
 				E612CAC41AB9437B008E811D /* Scenery_en-AU.jpg in Resources */,
 				E67372B61957353600BB7C75 /* Language_zh-HK.png in Resources */,
@@ -967,10 +981,12 @@
 				E64B86EB1988A4070015DDA6 /* Localization.csv in Resources */,
 				E6098B9B19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib in Resources */,
 				E657D3E21ABA86CF00A66317 /* Scenery_id-ID.jpg in Resources */,
+				E6437E701ABBB4CD003CD4A6 /* Scenery_zh-TW.jpg in Resources */,
 				E612CACF1AB9437B008E811D /* Scenery_hu-HU.jpg in Resources */,
 				E612CAC71AB9437B008E811D /* Scenery_en-US.jpg in Resources */,
 				E64B86DA19888E720015DDA6 /* Category_Question.png in Resources */,
 				E67372BC19573A1A00BB7C75 /* TC5PhraseTableViewCellOdd.xib in Resources */,
+				E6437E6E1ABBB4CD003CD4A6 /* Scenery_tr-TR.jpg in Resources */,
 				E673729E1957353600BB7C75 /* Language_es-ES.png in Resources */,
 				E673729C1957353600BB7C75 /* Language_en-US.png in Resources */,
 				E6466B281984001700054F17 /* Place.csv in Resources */,
