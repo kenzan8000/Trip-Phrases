@@ -32,8 +32,6 @@ NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:20
 
     // launch count
     NSInteger launchCount = [[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsLaunchCount];
-    [[NSUserDefaults standardUserDefaults] setInteger:launchCount + 1
-                                               forKey:kUserDefaultsLaunchCount];
 
     // play speed
     CGFloat speed = [[NSUserDefaults standardUserDefaults] floatForKey:kUserDefaultsPlaySpeed];
@@ -45,20 +43,28 @@ NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:20
 
     // native language
     if (launchCount == 0) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"en-US"
+                                                  forKey:kUserDefaultsNativeLanguage];
+        [[NSUserDefaults standardUserDefaults] setObject:@"it-IT"
+                                                  forKey:kUserDefaultsTranslatedLanguage];
+/*
         NSArray *languages = [NSLocale preferredLanguages];
         NSArray *userDefaultsKeys = @[kUserDefaultsNativeLanguage, kUserDefaultsTranslatedLanguage];
         for (NSInteger i = 0; i < userDefaultsKeys.count; i ++) {
             NSString *userDefaultsKey = userDefaultsKeys[i];
             for (NSInteger j = 0; j < kSpeechVoiceLanguages.count; j++) {
                 NSString *language = kSpeechVoiceLanguages[j];
-                if ([language hasPrefix:languages[i]]) {
+                if (language && [language isKindOfClass:[NSString class]] && [language hasPrefix:languages[i]]) {
                     [[NSUserDefaults standardUserDefaults] setObject:language
                                                               forKey:userDefaultsKey];
                 }
             }
         }
+*/
     }
-
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:launchCount + 1
+                                               forKey:kUserDefaultsLaunchCount];
     [[NSUserDefaults standardUserDefaults] synchronize];
 
     [TC5ConversationList sharedInstance];
