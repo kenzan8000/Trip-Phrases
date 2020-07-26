@@ -10,10 +10,19 @@ DEPENDENCIES:
   - SwipeView
   - TTTAttributedLabel
 
-SPEC CHECKSUMS:
-  ionicons: 6be0e241a437a7e69c50cbc8e1700ee8d1535a58
-  QBFlatButton: 5fcc26fe56e34cbae7c9de53aec38463f980c76e
-  SwipeView: 0093c212acf3d715b09334c50d568a4418404150
-  TTTAttributedLabel: 94bb04f1e005616002dd2cee0262a0082e533627
+SPEC REPOS:
+  trunk:
+    - ionicons
+    - QBFlatButton
+    - SwipeView
+    - TTTAttributedLabel
 
-COCOAPODS: 0.32.1
+SPEC CHECKSUMS:
+  ionicons: 3711c0d69cddccc44c7888730821b4000834ad69
+  QBFlatButton: 3cf272985cdbdd04d6bc8b7ae01e4dd62cb09c17
+  SwipeView: bd67cfaf7760c036438446b3ccb28a3b84fce009
+  TTTAttributedLabel: c8f3801a6463b9c9b82b0c84c465fdda9751892a
+
+PODFILE CHECKSUM: 470f07250a5690da2920d003de4ea1d8aa2b8e32
+
+COCOAPODS: 1.9.1

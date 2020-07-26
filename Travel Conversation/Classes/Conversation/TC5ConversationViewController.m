@@ -53,8 +53,8 @@
 {
     [super loadView];
 
-    [self.playButton setSurfaceColor:[UIColor colorWithHexadecimal:0xf39c12ff] forState:UIControlStateNormal];
-    [self.playButton setSurfaceColor:[UIColor colorWithHexadecimal:0xe67e22ff] forState:UIControlStateHighlighted];
+    [self.playButton setFaceColor:[UIColor colorWithHexadecimal:0xf39c12ff] forState:UIControlStateNormal];
+    [self.playButton setFaceColor:[UIColor colorWithHexadecimal:0xe67e22ff] forState:UIControlStateHighlighted];
     [self.playButton setSideColor:[UIColor colorWithHexadecimal:0xe67e22ff] forState:UIControlStateNormal];
     [self.playButton setSideColor:[UIColor colorWithHexadecimal:0xd35400ff] forState:UIControlStateHighlighted];
     [self.playButton setImage:[IonIcons imageWithIcon:icon_play size:32 color:[UIColor whiteColor]]

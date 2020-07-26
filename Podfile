@@ -1,13 +1,24 @@
-platform :ios, "7.0"
-xcodeproj 'Travel Conversation.xcodeproj'
-# user interface
-pod 'QBFlatButton'
-pod 'SwipeView'
-pod 'TTTAttributedLabel'
-# Font
-pod 'ionicons'
+platform :ios, "12.0"
 
-post_install do | installer |
-  require 'fileutils'
-  FileUtils.cp_r('Pods/Pods-acknowledgements.plist', 'Travel Conversation/Resources/Plists/acknowledgements.plist', :remove_destination => true)
+target_name = 'Travel Conversation'
+
+use_frameworks!
+project target_name
+
+target target_name do
+  # user interface
+  pod 'QBFlatButton'
+  pod 'SwipeView'
+  pod 'TTTAttributedLabel'
+  # Font
+  pod 'ionicons'
 end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '5.0'
+    end
+  end
+end
+

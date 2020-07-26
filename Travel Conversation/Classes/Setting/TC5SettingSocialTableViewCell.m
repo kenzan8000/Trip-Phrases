@@ -97,9 +97,9 @@
         ];
         image = [IonIcons imageWithIcon:icon_compose size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
     }
-    [self.reviewButton setSurfaceColor:colors[0]
+    [self.reviewButton setFaceColor:colors[0]
                            forState:UIControlStateNormal];
-    [self.reviewButton setSurfaceColor:colors[1]
+    [self.reviewButton setFaceColor:colors[1]
                            forState:UIControlStateHighlighted];
     [self.reviewButton setSideColor:colors[2]
                            forState:UIControlStateNormal];

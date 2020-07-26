@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE8550F6CBBD4832A7864153 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204D6CA192D427CA7CAB512 /* libPods.a */; };
 		E6098B9B19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6098B9A19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib */; };
 		E612937C198E35DE00CE138D /* TC5SettingSocialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E612937A198E35DE00CE138D /* TC5SettingSocialTableViewCell.m */; };
 		E612937D198E35DE00CE138D /* TC5SettingSocialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E612937B198E35DE00CE138D /* TC5SettingSocialTableViewCell.xib */; };
@@ -157,6 +156,7 @@
 		E67372E91957E8FC00BB7C75 /* Tutorial_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E67372E61957E8FC00BB7C75 /* Tutorial_1.jpg */; };
 		E67372EA1957E8FC00BB7C75 /* Tutorial_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E67372E71957E8FC00BB7C75 /* Tutorial_2.jpg */; };
 		E67372F5195813CD00BB7C75 /* TC5ChooseLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67372F2195813CD00BB7C75 /* TC5ChooseLanguageViewController.m */; };
+		E67A699824CD533B00E88AAF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67A699724CD533B00E88AAF /* Launch Screen.storyboard */; };
 		E694444A195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6944448195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m */; };
 		E694444B195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6944449195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib */; };
 		E6E094011AB5348300BF0CDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E094001AB5348300BF0CDD /* Images.xcassets */; };
@@ -165,10 +165,13 @@
 		E6EF01BB19728DE0008E972A /* Category.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01B819728DE0008E972A /* Category.csv */; };
 		E6EF01C019729B56008E972A /* ConversationCategory.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01BE19729B56008E972A /* ConversationCategory.csv */; };
 		E6EF01C119729B56008E972A /* Conversation.csv in Resources */ = {isa = PBXBuildFile; fileRef = E6EF01BF19729B56008E972A /* Conversation.csv */; };
+		EFB1E64E67EFD4059609801F /* Pods_Travel_Conversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A66F1CA227EF557E837888 /* Pods_Travel_Conversation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2204D6CA192D427CA7CAB512 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7E368E3A460B295112A786 /* Pods-Travel Conversation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel Conversation.release.xcconfig"; path = "Target Support Files/Pods-Travel Conversation/Pods-Travel Conversation.release.xcconfig"; sourceTree = "<group>"; };
+		D3A66F1CA227EF557E837888 /* Pods_Travel_Conversation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travel_Conversation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DF04E79E2286C386927E46 /* Pods-Travel Conversation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel Conversation.debug.xcconfig"; path = "Target Support Files/Pods-Travel Conversation/Pods-Travel Conversation.debug.xcconfig"; sourceTree = "<group>"; };
 		E6098B9A19719B5500AF913C /* TC5ChooseLanguageTableViewCellSelected.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5ChooseLanguageTableViewCellSelected.xib; sourceTree = "<group>"; };
 		E6129379198E35DE00CE138D /* TC5SettingSocialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC5SettingSocialTableViewCell.h; sourceTree = "<group>"; };
 		E612937A198E35DE00CE138D /* TC5SettingSocialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5SettingSocialTableViewCell.m; sourceTree = "<group>"; };
@@ -360,6 +363,7 @@
 		E67372E71957E8FC00BB7C75 /* Tutorial_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tutorial_2.jpg; sourceTree = "<group>"; };
 		E67372F1195813CD00BB7C75 /* TC5ChooseLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC5ChooseLanguageViewController.h; sourceTree = "<group>"; };
 		E67372F2195813CD00BB7C75 /* TC5ChooseLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5ChooseLanguageViewController.m; sourceTree = "<group>"; };
+		E67A699724CD533B00E88AAF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E6944447195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TC5ChooseLanguageTableViewCell.h; sourceTree = "<group>"; };
 		E6944448195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TC5ChooseLanguageTableViewCell.m; sourceTree = "<group>"; };
 		E6944449195938B700C21EB0 /* TC5ChooseLanguageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TC5ChooseLanguageTableViewCell.xib; sourceTree = "<group>"; };
@@ -369,7 +373,6 @@
 		E6EF01B819728DE0008E972A /* Category.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Category.csv; sourceTree = "<group>"; };
 		E6EF01BE19729B56008E972A /* ConversationCategory.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConversationCategory.csv; sourceTree = "<group>"; };
 		E6EF01BF19729B56008E972A /* Conversation.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Conversation.csv; sourceTree = "<group>"; };
-		E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,13 +387,22 @@
 				E673720C1956CCC000BB7C75 /* CoreGraphics.framework in Frameworks */,
 				E673720E1956CCC000BB7C75 /* UIKit.framework in Frameworks */,
 				E673720A1956CCC000BB7C75 /* Foundation.framework in Frameworks */,
-				BE8550F6CBBD4832A7864153 /* libPods.a in Frameworks */,
+				EFB1E64E67EFD4059609801F /* Pods_Travel_Conversation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76AC25B9523C96616FE55306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6DF04E79E2286C386927E46 /* Pods-Travel Conversation.debug.xcconfig */,
+				7E7E368E3A460B295112A786 /* Pods-Travel Conversation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E6098B88197178EB00AF913C /* Icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,7 +540,7 @@
 				E673722E1956CCC100BB7C75 /* Travel ConversationTests */,
 				E67372081956CCC000BB7C75 /* Frameworks */,
 				E67372071956CCC000BB7C75 /* Products */,
-				E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */,
+				76AC25B9523C96616FE55306 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -551,7 +563,7 @@
 				E673720B1956CCC000BB7C75 /* CoreGraphics.framework */,
 				E673720D1956CCC000BB7C75 /* UIKit.framework */,
 				E67372281956CCC100BB7C75 /* XCTest.framework */,
-				2204D6CA192D427CA7CAB512 /* libPods.a */,
+				D3A66F1CA227EF557E837888 /* Pods_Travel_Conversation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -595,6 +607,7 @@
 				E65066211989A6700073F6F1 /* Setting */,
 				E673725C1956FBC000BB7C75 /* UIKit-Extension */,
 				E67372421956D06900BB7C75 /* Main.storyboard */,
+				E67A699724CD533B00E88AAF /* Launch Screen.storyboard */,
 				E673725B1956EF2A00BB7C75 /* TC5Constant.h */,
 				E673723F1956D06900BB7C75 /* AppDelegate.h */,
 				E67372401956D06900BB7C75 /* AppDelegate.m */,
@@ -798,11 +811,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67372381956CCC100BB7C75 /* Build configuration list for PBXNativeTarget "Travel Conversation" */;
 			buildPhases = (
-				CF42E65BBC584B4EBA3E6F31 /* Check Pods Manifest.lock */,
+				0B315E1C08385BDEBA92C81D /* [CP] Check Pods Manifest.lock */,
 				E67372021956CCC000BB7C75 /* Sources */,
 				E67372031956CCC000BB7C75 /* Frameworks */,
 				E67372041956CCC000BB7C75 /* Resources */,
-				58EAF2AAA6FA4D47B50C4ECA /* Copy Pods Resources */,
+				2DA810D8EDB05C6FEC74444E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -824,6 +837,7 @@
 				TargetAttributes = {
 					E67372051956CCC000BB7C75 = {
 						DevelopmentTeam = 6RYZ4RB738;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -832,6 +846,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -882,6 +897,7 @@
 				E67372CF1957496400BB7C75 /* TC5PhraseSectionTableViewCell.xib in Resources */,
 				E657D3E51ABA86CF00A66317 /* Scenery_nl-BE.jpg in Resources */,
 				E657D3E31ABA86CF00A66317 /* Scenery_ja-JP.jpg in Resources */,
+				E67A699824CD533B00E88AAF /* Launch Screen.storyboard in Resources */,
 				E673729A1957353600BB7C75 /* Language_en-GB.png in Resources */,
 				E6473443199DC7BF00148C50 /* Language.csv in Resources */,
 				E612CAC61AB9437B008E811D /* Scenery_en-IE.jpg in Resources */,
@@ -968,34 +984,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58EAF2AAA6FA4D47B50C4ECA /* Copy Pods Resources */ = {
+		0B315E1C08385BDEBA92C81D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Travel Conversation-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF42E65BBC584B4EBA3E6F31 /* Check Pods Manifest.lock */ = {
+		2DA810D8EDB05C6FEC74444E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Travel Conversation/Pods-Travel Conversation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QBFlatButton/QBFlatButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeView/SwipeView.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/ionicons/ionicons.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBFlatButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ionicons.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Travel Conversation/Pods-Travel Conversation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1134,34 +1166,44 @@
 		};
 		E67372391956CCC100BB7C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */;
+			baseConfigurationReference = D6DF04E79E2286C386927E46 /* Pods-Travel Conversation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		E673723A1956CCC100BB7C75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E79FF081ECDC47D8A2DD6B89 /* Pods.xcconfig */;
+			baseConfigurationReference = 7E7E368E3A460B295112A786 /* Pods-Travel Conversation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kenzan Hase (6RYZ4RB738)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "cd687f70-de86-4c19-85d4-ef00fa2f5f98";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
