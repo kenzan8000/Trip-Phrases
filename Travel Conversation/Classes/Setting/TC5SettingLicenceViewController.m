@@ -1,5 +1,5 @@
 #import "TC5SettingLicenceViewController.h"
-#import "IonIcons.h"
+// #import "IonIcons.h"
 
 
 #pragma mark - TC5SettingLicenceViewController
@@ -26,7 +26,8 @@
     // Licence
     [self initializeLicence];
     // barbuttonItem
-    [self.backBarButtonItem setImage:[IonIcons imageWithIcon:icon_arrow_left_a size:32 color:[UIColor whiteColor]]];
+    // [self.backBarButtonItem setImage:[IonIcons imageWithIcon:icon_arrow_left_a size:32 color:[UIColor whiteColor]]];
+    [self.backBarButtonItem setImage:[[UIImage systemImageNamed:@"arrow.left" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
     [self.backBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 }
 

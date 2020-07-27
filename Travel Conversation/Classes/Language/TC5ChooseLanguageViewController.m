@@ -1,5 +1,5 @@
 #import "TC5ChooseLanguageViewController.h"
-#import "IonIcons.h"
+// #import "IonIcons.h"
 #import "UINib+UIKit.h"
 #import "TC5ChooseLanguageTableViewCell.h"
 #import "TC5CountryList.h"
@@ -45,7 +45,8 @@
     }
 
     // barbuttonItem
-    [self.closeBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_close_empty size:40 color:[UIColor whiteColor]]];
+    // [self.closeBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_close_empty size:40 color:[UIColor whiteColor]]];
+    [self.closeBarButtonItem setImage:[[UIImage systemImageNamed:@"xmark" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:40]] imageWithTintColor:[UIColor whiteColor]]];
     [self.closeBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 }
 

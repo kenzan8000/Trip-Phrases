@@ -1,6 +1,6 @@
 #import "TC5SettingSocialTableViewCell.h"
 #import <Social/Social.h>
-#import "IonIcons.h"
+// #import "IonIcons.h"
 //#import "MTStatusBarOverlay.h"
 #import "UIColor+Hexadecimal.h"
 #import "QBFlatButton.h"
@@ -77,7 +77,7 @@
             [UIColor colorWithHexadecimal:0x00b0cfff],
             [UIColor colorWithHexadecimal:0x0098b8ff],
         ];
-        image = [IonIcons imageWithIcon:icon_social_twitter size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
+        // image = [IonIcons imageWithIcon:icon_social_twitter size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
     }
     else if ([title isEqualToString:@"Post"]) {
         colors = @[
@@ -86,7 +86,7 @@
             [UIColor colorWithHexadecimal:0x284181ff],
             [UIColor colorWithHexadecimal:0x102868ff],
         ];
-        image = [IonIcons imageWithIcon:icon_social_facebook size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
+        // image = [IonIcons imageWithIcon:icon_social_facebook size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
     }
     else if ([title isEqualToString:@"Review"]) {
         colors = @[
@@ -95,7 +95,7 @@
             [UIColor colorWithHexadecimal:0x909090ff],
             [UIColor colorWithHexadecimal:0x707070ff],
         ];
-        image = [IonIcons imageWithIcon:icon_compose size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
+        // image = [IonIcons imageWithIcon:icon_compose size:32 color:[UIColor colorWithHexadecimal:0xffffffff]];
     }
     [self.reviewButton setFaceColor:colors[0]
                            forState:UIControlStateNormal];

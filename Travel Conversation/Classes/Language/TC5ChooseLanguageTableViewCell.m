@@ -1,5 +1,5 @@
 #import "TC5ChooseLanguageTableViewCell.h"
-#import "IonIcons.h"
+// #import "IonIcons.h"
 
 
 #pragma mark - TC5ChooseLanguageTableViewCell
@@ -18,6 +18,7 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    /*
     self.checkBoxBackgroundImageView.image = [IonIcons imageWithIcon:icon_stop
                                                                 size:self.checkBoxBackgroundImageView.frame.size.width*2
                                                                color:[UIColor grayColor]];
@@ -27,6 +28,10 @@
     self.checkMarkImageView.image = [IonIcons imageWithIcon:icon_ios7_checkmark_empty
                                                        size:self.checkMarkImageView.frame.size.width*2
                                                       color:[UIColor blackColor]];
+     */
+    self.checkBoxBackgroundImageView.image = [[UIImage systemImageNamed:@"stop.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkBoxBackgroundImageView.frame.size.width*2]] imageWithTintColor:[UIColor grayColor]];
+    self.checkBoxForegroundImageView.image = [[UIImage systemImageNamed:@"stop.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkBoxForegroundImageView.frame.size.width*2]] imageWithTintColor:[UIColor whiteColor]];
+    self.checkMarkImageView.image = [[UIImage systemImageNamed:@"checkmark" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkMarkImageView.frame.size.width*2]] imageWithTintColor:[UIColor blackColor]];
 }
 
 

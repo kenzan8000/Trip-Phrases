@@ -11,7 +11,7 @@ target target_name do
   pod 'SwipeView'
   pod 'TTTAttributedLabel'
   # Font
-  pod 'ionicons'
+  # pod 'ionicons'
 end
 
 post_install do |installer|

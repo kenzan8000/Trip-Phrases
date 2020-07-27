@@ -1,7 +1,7 @@
 #import "TC5SettingSoundTableViewCell.h"
 #import "TC5LocalizationList.h"
 #import <MediaPlayer/MediaPlayer.h>
-#import "IonIcons.h"
+// #import "IonIcons.h"
 #import "UIColor+Hexadecimal.h"
 
 
@@ -18,7 +18,8 @@
     [super awakeFromNib];
 
     // volume
-    [self.volumeImageView setImage:[IonIcons imageWithIcon:icon_volume_medium size:40 color:[UIColor colorWithHexadecimal:0x34495eff]]];
+    // [self.volumeImageView setImage:[IonIcons imageWithIcon:icon_volume_medium size:40 color:[UIColor colorWithHexadecimal:0x34495eff]]];
+    [self.volumeImageView setImage:[[UIImage systemImageNamed:@"speaker.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:40]] imageWithTintColor:[UIColor colorWithHexadecimal:0x34495eff]]];
     CGRect rect = self.volumeBackgroundView.frame;
     rect.origin.x = rect.origin.y = 0;
     self.volumeView = [[MPVolumeView alloc] initWithFrame:rect];
@@ -33,7 +34,8 @@
     CGFloat speed = [[NSUserDefaults standardUserDefaults] floatForKey:kUserDefaultsPlaySpeed];
     [self.playSpeedSlider setValue:speed
                           animated:NO];
-    [self.playSpeedImageView setImage:[IonIcons imageWithIcon:icon_speedometer size:40 color:[UIColor colorWithHexadecimal:0x34495eff]]];
+    // [self.playSpeedImageView setImage:[IonIcons imageWithIcon:icon_speedometer size:40 color:[UIColor colorWithHexadecimal:0x34495eff]]];
+    [self.playSpeedImageView setImage:[[UIImage systemImageNamed:@"speedometer" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:40]] imageWithTintColor:[UIColor colorWithHexadecimal:0x34495eff]]];
 
     // label
 //    self.volumeLabel.text = [[TC5LocalizationList sharedInstance] localizationWithEnglishKey:@"Volume"];
