@@ -219,7 +219,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     }
 }
 
-
+/*
 #pragma mark - UISearchDisplayDelegate
 - (void)filterContentForSearchText:(NSString *)searchText
                              scope:(NSString *)scope
@@ -251,7 +251,7 @@ shouldReloadTableForSearchString:(NSString *)searchString
 -(void)searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
 {
 }
-
+*/
 
 #pragma mark - TC5SearchTableViewCellDelgate
 - (void)touchedUpInsideWithTC5LaunguageTableViewCell:(TC5SearchTableViewCell *)cell

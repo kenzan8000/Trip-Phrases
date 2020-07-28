@@ -6,7 +6,7 @@
 
 
 #pragma mark - TC5SearchViewController
-@interface TC5SearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, TC5LaunguageTableViewCellDelegate> {
+@interface TC5SearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,/* UISearchDisplayDelegate,*/ TC5LaunguageTableViewCellDelegate> {
 }
 
 
