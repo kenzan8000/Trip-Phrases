@@ -30,8 +30,11 @@
                                                       color:[UIColor blackColor]];
      */
     self.checkBoxBackgroundImageView.image = [[UIImage systemImageNamed:@"stop.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkBoxBackgroundImageView.frame.size.width*2]] imageWithTintColor:[UIColor grayColor]];
+    self.checkBoxBackgroundImageView.tintColor = [UIColor grayColor];
     self.checkBoxForegroundImageView.image = [[UIImage systemImageNamed:@"stop.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkBoxForegroundImageView.frame.size.width*2]] imageWithTintColor:[UIColor whiteColor]];
+    self.checkBoxForegroundImageView.tintColor = [UIColor whiteColor];
     self.checkMarkImageView.image = [[UIImage systemImageNamed:@"checkmark" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:self.checkMarkImageView.frame.size.width*2]] imageWithTintColor:[UIColor blackColor]];
+    self.checkMarkImageView.tintColor = [UIColor blackColor];
 }
 
 

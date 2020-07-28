@@ -59,6 +59,7 @@
     [self.playButton setSideColor:[UIColor colorWithHexadecimal:0xd35400ff] forState:UIControlStateHighlighted];
     // [self.playButton setImage:[IonIcons imageWithIcon:icon_play size:32 color:[UIColor whiteColor]] forState:UIControlStateNormal];
     [self.playButton setImage:[[UIImage systemImageNamed:@"play.fill" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]] forState:UIControlStateNormal];
+    [self.playButton setTintColor:[UIColor whiteColor]];
 
     // hint
     self.swipeLeftHintView.layer.cornerRadius = 30;
@@ -67,8 +68,10 @@
     self.swipeRightHintView.clipsToBounds = YES;
     // self.swipeLeftHintImageView.image = [IonIcons imageWithIcon:icon_ios7_arrow_back size:60 color:[UIColor whiteColor]];
     self.swipeLeftHintImageView.image = [[UIImage systemImageNamed:@"chevron.left" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:60]] imageWithTintColor:[UIColor whiteColor]];
+    self.swipeLeftHintImageView.tintColor = [UIColor whiteColor];
     // self.swipeRightHintImageView.image = [IonIcons imageWithIcon:icon_ios7_arrow_forward size:60 color:[UIColor whiteColor]];
     self.swipeRightHintImageView.image = [[UIImage systemImageNamed:@"chevron.right" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:60]] imageWithTintColor:[UIColor whiteColor]];
+    self.swipeRightHintImageView.tintColor = [UIColor whiteColor];
     if (self.currentIndex <= 0) {
         self.swipeLeftHintView.hidden = YES;
     }
@@ -89,9 +92,11 @@
     // barbuttonItem
     // [self.backBarButtonItem setImage:[IonIcons imageWithIcon:icon_arrow_left_a size:32 color:[UIColor whiteColor]]];
     [self.backBarButtonItem setImage:[[UIImage systemImageNamed:@"arrow.left" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.backBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.backBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
     // [self.settingBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_arrow_down size:32 color:[UIColor whiteColor]]];
     [self.settingBarButtonItem setImage:[[UIImage systemImageNamed:@"chevron.down" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
     [self setNavigationBarTitle];
@@ -299,6 +304,7 @@ numberOfRowsInComponent:(NSInteger)component
 {
     // [self.settingBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_arrow_up size:32 color:[UIColor whiteColor]]];
     [self.settingBarButtonItem setImage:[[UIImage systemImageNamed:@"chevron.up" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
     CGFloat offset = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
@@ -323,6 +329,7 @@ numberOfRowsInComponent:(NSInteger)component
 {
     // [self.settingBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_arrow_down size:32 color:[UIColor whiteColor]]];
     [self.settingBarButtonItem setImage:[[UIImage systemImageNamed:@"chevron.down" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
     CGFloat offset = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;

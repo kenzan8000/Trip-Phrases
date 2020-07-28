@@ -30,6 +30,7 @@
     // barbuttonItem
     // [self.navigationItem.leftBarButtonItem setImage:[IonIcons imageWithIcon:icon_arrow_left_a size:32 color:[UIColor whiteColor]]];
     [self.navigationItem.leftBarButtonItem setImage:[[UIImage systemImageNamed:@"arrow.left" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.navigationItem.leftBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.navigationItem.leftBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 }
 

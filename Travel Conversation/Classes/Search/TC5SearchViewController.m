@@ -80,9 +80,11 @@
     // barbuttonItem
     // [self.settingBarButtonItem setImage:[IonIcons imageWithIcon:icon_gear_a size:32 color:[UIColor whiteColor]]];
     [self.settingBarButtonItem setImage:[[UIImage systemImageNamed:@"gear" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
     // [self.searchBarButtonItem setImage:[IonIcons imageWithIcon:icon_ios7_search_strong size:32 color:[UIColor whiteColor]]];
     [self.searchBarButtonItem setImage:[[UIImage systemImageNamed:@"magnifyingglass" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
+    [self.searchBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.searchBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
     [[NSNotificationCenter defaultCenter] addObserver:self
