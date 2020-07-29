@@ -6,7 +6,7 @@
 
 
 #pragma mark - TC5SearchViewController
-@interface TC5SearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,/* UISearchDisplayDelegate,*/ TC5LaunguageTableViewCellDelegate> {
+@interface TC5SearchViewController: UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating,/* UISearchDisplayDelegate,*/ TC5LaunguageTableViewCellDelegate> {
 }
 
 
@@ -18,7 +18,8 @@
 @property (nonatomic, strong) NSMutableArray *cellClasses;
 @property (nonatomic, strong) NSArray *searchCategories;
 @property (nonatomic, strong) NSArray *searchResults;
-
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) UITableView *searchTableView;
 
 #pragma mark - event listener
 - (IBAction)touchedUpInsideWithBarButtonItem:(UIBarButtonItem *)barButtonItem;

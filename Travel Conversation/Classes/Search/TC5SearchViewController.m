@@ -30,6 +30,8 @@
 @synthesize cellClasses;
 @synthesize searchCategories;
 @synthesize searchResults;
+@synthesize searchController;
+@synthesize searchTableView;
 
 
 #pragma mark - release
@@ -41,6 +43,8 @@
     self.cellClasses = nil;
     self.searchCategories = nil;
     self.searchResults = nil;
+    self.searchController = nil;
+    self.searchTableView = nil;
 }
 
 
@@ -53,7 +57,7 @@
 
     // tutorial
     //self.tutorial = [[TC5Tutorial alloc] initWithParentView:self.navigationController.view];
-
+    
     // category
     NSInteger count = [[[TC5CategoryList sharedInstance] categories] count];
     NSMutableArray *categories = [NSMutableArray new];
@@ -86,6 +90,18 @@
     [self.searchBarButtonItem setImage:[[UIImage systemImageNamed:@"magnifyingglass" withConfiguration:[UIImageSymbolConfiguration configurationWithPointSize:32]] imageWithTintColor:[UIColor whiteColor]]];
     [self.searchBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.searchBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
+    
+    UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    searchController.searchResultsUpdater = self;
+    searchController.delegate = self;
+    searchController.hidesNavigationBarDuringPresentation = true;
+    searchController.obscuresBackgroundDuringPresentation = true;
+    searchController.searchBar.searchBarStyle = UISearchBarStyleProminent;
+    [searchController.searchBar sizeToFit];
+    searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchController.searchBar.frame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - searchController.searchBar.frame.size.height) style: UITableViewStylePlain];
+    [searchTableView setHidden: true];
+    [self.view addSubview:searchTableView];
+    self.searchController = searchController;
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(nativeLanguageDidChoosedWithNotification:)
@@ -133,25 +149,38 @@
 - (NSInteger)tableView:(UITableView *)tv
  numberOfRowsInSection:(NSInteger)section
 {
+    /*
     if (tv == self.searchDisplayController.searchResultsTableView) {
         return [self.searchResults count];
     }
-
-    return self.cellClasses.count;
+    */
+    
+    if (tv == menuTableView) {
+        return self.cellClasses.count;
+    }
+    return [self.searchResults count];
 }
 
 - (CGFloat)tableView:(UITableView *)tv
 heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     if (tv == self.searchDisplayController.searchResultsTableView) {
         TC5Conversation *conversation = self.searchResults[indexPath.row];
         NSString *text = [conversation nativeTitleText];
         return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
                                                                text:text
-                                                               size:CGSizeMake(tv.frame.size.width-80/*240*/, MAXFLOAT)];
+                                                               size:CGSizeMake(tv.frame.size.width-80, MAXFLOAT)];
     }
-
-    return [self.cellClasses[indexPath.row] TC5Height];
+    */
+    if (tv == self.menuTableView) {
+        return [self.cellClasses[indexPath.row] TC5Height];
+    }
+    TC5Conversation *conversation = self.searchResults[indexPath.row];
+    NSString *text = [conversation nativeTitleText];
+    return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
+                                                           text:text
+                                                           size:CGSizeMake(tv.frame.size.width-80, MAXFLOAT)];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -209,7 +238,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                                   sender:nil];
     }
     else {
-
         TC5ConversationViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:
             NSStringFromClass([TC5ConversationViewController class])
         ];
@@ -254,6 +282,45 @@ shouldReloadTableForSearchString:(NSString *)searchString
 {
 }
 */
+#pragma mark - UISearchControllerDelegate
+- (void)willPresentSearchController:(UISearchController *)searchController
+{
+    [searchTableView setHidden: false];
+}
+
+- (void)didPresentSearchController:(UISearchController *)searchController
+{
+    [searchTableView setHidden: false];
+}
+
+- (void)willDismissSearchController:(UISearchController *)searchController
+{
+    [searchTableView setHidden: true];
+}
+
+- (void)didDismissSearchController:(UISearchController *)searchController
+{
+    [searchTableView setHidden: true];
+}
+
+- (void)presentSearchController:(UISearchController *)searchController
+{
+    NSArray *conversations = [self.searchCategories[0] conversations];
+    NSString *nativeLanguage = [[NSUserDefaults standardUserDefaults] stringForKey:kUserDefaultsNativeLanguage];
+    NSArray *predicates = @[
+        [NSPredicate predicateWithFormat:@"SELF.%@ contains[c] %@",
+            [nativeLanguage stringByReplacingOccurrencesOfString:@"-" withString:@""],
+            searchController.searchBar.text
+        ],
+    ];
+    self.searchResults = [conversations filteredArrayUsingPredicate:[NSCompoundPredicate orPredicateWithSubpredicates:predicates]];
+    [self.searchTableView reloadData];
+}
+
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+}
 
 #pragma mark - TC5SearchTableViewCellDelgate
 - (void)touchedUpInsideWithTC5LaunguageTableViewCell:(TC5SearchTableViewCell *)cell
@@ -286,7 +353,10 @@ shouldReloadTableForSearchString:(NSString *)searchString
                                   sender:nil];
     }
     else if (barButtonItem == self.searchBarButtonItem) {
-        [self.searchDisplayController.searchBar becomeFirstResponder];
+        //[self.searchDisplayController.searchBar becomeFirstResponder];
+        
+        [self.view addSubview:searchController.searchBar];
+        [searchController.searchBar becomeFirstResponder];
     }
 }
 
