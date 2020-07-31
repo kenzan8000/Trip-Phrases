@@ -44,6 +44,7 @@
     self.searchCategories = nil;
     self.searchResults = nil;
     self.searchController = nil;
+    [self.searchTableView removeFromSuperview];
     self.searchTableView = nil;
 }
 
@@ -94,13 +95,17 @@
     UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     searchController.searchResultsUpdater = self;
     searchController.delegate = self;
+    searchController.searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
     searchController.hidesNavigationBarDuringPresentation = true;
-    searchController.obscuresBackgroundDuringPresentation = true;
+    searchController.obscuresBackgroundDuringPresentation = false;
     searchController.searchBar.searchBarStyle = UISearchBarStyleProminent;
     [searchController.searchBar sizeToFit];
-    searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchController.searchBar.frame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - searchController.searchBar.frame.size.height) style: UITableViewStylePlain];
+    UIWindow *parent = [[UIApplication sharedApplication] windows][0];
+    searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchController.searchBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - searchController.searchBar.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style: UITableViewStylePlain];
     [searchTableView setHidden: true];
-    [self.view addSubview:searchTableView];
+    [searchTableView setDelegate:self];
+    [searchTableView setDataSource:self];
+    [parent addSubview:searchTableView];
     self.searchController = searchController;
 
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -245,7 +250,10 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         vc.conversations = self.searchResults;
         [self.navigationController pushViewController:vc
                                              animated:YES];
-
+        
+        [searchTableView setHidden: true];
+        [searchController.searchBar removeFromSuperview];
+        [searchController setActive:false];
     }
 }
 
@@ -305,6 +313,11 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 - (void)presentSearchController:(UISearchController *)searchController
 {
+}
+
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
     NSArray *conversations = [self.searchCategories[0] conversations];
     NSString *nativeLanguage = [[NSUserDefaults standardUserDefaults] stringForKey:kUserDefaultsNativeLanguage];
     NSArray *predicates = @[
@@ -315,11 +328,6 @@ shouldReloadTableForSearchString:(NSString *)searchString
     ];
     self.searchResults = [conversations filteredArrayUsingPredicate:[NSCompoundPredicate orPredicateWithSubpredicates:predicates]];
     [self.searchTableView reloadData];
-}
-
-#pragma mark - UISearchResultsUpdating
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
-{
 }
 
 #pragma mark - TC5SearchTableViewCellDelgate
@@ -354,7 +362,6 @@ shouldReloadTableForSearchString:(NSString *)searchString
     }
     else if (barButtonItem == self.searchBarButtonItem) {
         //[self.searchDisplayController.searchBar becomeFirstResponder];
-        
         [self.view addSubview:searchController.searchBar];
         [searchController.searchBar becomeFirstResponder];
     }
