@@ -99,6 +99,12 @@
     searchController.hidesNavigationBarDuringPresentation = true;
     searchController.obscuresBackgroundDuringPresentation = false;
     searchController.searchBar.searchBarStyle = UISearchBarStyleProminent;
+    searchController.searchBar.searchTextField.textColor = [UIColor blackColor];
+    searchController.searchBar.searchTextField.backgroundColor = [UIColor whiteColor];
+    searchController.searchBar.backgroundColor = [UIColor colorWithHexadecimal:0x34495eff];
+    searchController.searchBar.tintColor = [UIColor blackColor];
+    searchController.searchBar.barTintColor = [UIColor colorWithHexadecimal:0x34495eff];
+    [searchController.searchBar setShowsCancelButton:true];
     [searchController.searchBar sizeToFit];
     UIWindow *parent = [[UIApplication sharedApplication] windows][0];
     searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchController.searchBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - searchController.searchBar.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style: UITableViewStylePlain];
