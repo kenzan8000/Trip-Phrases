@@ -1,8 +1,8 @@
-#import "TC5SettingSocialTableViewCell.h"
+//#import "TC5SettingSocialTableViewCell.h"
 
 
 #pragma mark - TC5SettingViewController
-@interface TC5SettingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, TC5SettingSocialTableViewCellDelegate> {
+@interface TC5SettingViewController : UIViewController <UITableViewDelegate, UITableViewDataSource/*, TC5SettingSocialTableViewCellDelegate*/> {
 }
 
 

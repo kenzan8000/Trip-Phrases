@@ -1,5 +1,5 @@
 #import "TC5SettingViewController.h"
-#import <Social/Social.h>
+// #import <Social/Social.h>
 // #import "IonIcons.h"
 #import "QBFlatButton.h"
 #import "UINib+UIKit.h"
@@ -41,7 +41,7 @@
     [self.closeBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.closeBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
-
+/*
     if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook] &&
         [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]) {
 
@@ -131,6 +131,19 @@
         ];
 
     }
+    */
+    self.cellClasses = @[
+        [TC5PhraseSectionTableViewCell class],
+        [TC5SettingSoundTableViewCell class],
+        [TC5PhraseSectionTableViewCell class],
+        [TC5SettingLicenceTableViewCell class],
+    ];
+    self.cellTitles = @[
+        @"Sound Setting",
+        @"",
+        @"Licence",
+        @"",
+    ];
 }
 
 
@@ -166,10 +179,12 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     if ([className isEqualToString:NSStringFromClass([TC5PhraseSectionTableViewCell class])]) {
         [[((TC5PhraseSectionTableViewCell *)cell) sectionLabel] setText:text];
     }
+    /*
     else if ([className isEqualToString:NSStringFromClass([TC5SettingSocialTableViewCell class])]) {
         [((TC5SettingSocialTableViewCell *)cell) setTitleWithTitleString:text];
         [((TC5SettingSocialTableViewCell *)cell) setDelegate:self];
     }
+    */
 
     return cell;
 }
@@ -186,7 +201,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                              animated:YES];
 }
 
-
+/*
 #pragma mark - TC5SettingSocialTableViewCellDelegate
 - (void)presentViewController:(UIViewController *)vc
                          cell:(TC5SettingSocialTableViewCell *)cell
@@ -195,7 +210,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                        animated:YES
                      completion:nil];
 }
-
+*/
 
 #pragma mark - event listener
 - (IBAction)touchedUpInsideWithBarButtonItem:(UIBarButtonItem *)barButtonItem
