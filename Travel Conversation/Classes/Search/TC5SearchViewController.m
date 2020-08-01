@@ -166,10 +166,10 @@
     }
     */
     
-    if (tv == menuTableView) {
-        return self.cellClasses.count;
+    if (tv == searchTableView) {
+        return [self.searchResults count];
     }
-    return [self.searchResults count];
+    return self.cellClasses.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tv
@@ -184,23 +184,23 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
                                                                size:CGSizeMake(tv.frame.size.width-80, MAXFLOAT)];
     }
     */
-    if (tv == self.menuTableView) {
-        return [self.cellClasses[indexPath.row] TC5Height];
+    if (tv == searchTableView) {
+        TC5Conversation *conversation = self.searchResults[indexPath.row];
+        NSString *text = [conversation nativeTitleText];
+        return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
+                                                               text:text
+                                                               size:CGSizeMake(tv.frame.size.width-80, MAXFLOAT)];
     }
-    TC5Conversation *conversation = self.searchResults[indexPath.row];
-    NSString *text = [conversation nativeTitleText];
-    return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
-                                                           text:text
-                                                           size:CGSizeMake(tv.frame.size.width-80, MAXFLOAT)];
+    return [self.cellClasses[indexPath.row] TC5Height];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.menuTableView dequeueReusableCellWithIdentifier:NSStringFromClass([TC5SearchViewController class])];
+    UITableViewCell *cell = nil;
+    if (tableView == menuTableView) {
 
-    if (tableView == self.menuTableView) {
-
+    cell = [self.menuTableView dequeueReusableCellWithIdentifier:NSStringFromClass([TC5SearchViewController class])];
     if (!cell) {
         cell = (UITableViewCell *)[UINib UIKitFromClass:self.cellClasses[indexPath.row]];
     }
@@ -224,31 +224,31 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     }
     else {
 
+    cell = [self.searchTableView dequeueReusableCellWithIdentifier:NSStringFromClass([TC5SearchViewController class])];
     if (!cell) {
         cell = (UITableViewCell *)[UINib UIKitFromClass:[TC5ConversationCatalogTableViewCell class]];
     }
-
     TC5ConversationCatalogTableViewCell *c = (TC5ConversationCatalogTableViewCell *)cell;
 
-    c.conversationTitleLabel.numberOfLines = 0;
     TC5Conversation *conversation = self.searchResults[indexPath.row];
-    c.conversationTitleLabel.text = [conversation nativeTitleText];
+    NSString *text = [conversation nativeTitleText];
+    c.conversationTitleLabel.text = text;
     c.categoryImageView.image = [conversation image];
+    c.conversationTitleLabel.numberOfLines = ([TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17] text:text size:CGSizeMake(tableView.frame.size.width-80, MAXFLOAT)] > [TC5ConversationCatalogTableViewCell TC5Height]) ? 0 : 1;
     [c.conversationTitleLabel sizeToFit];
 
     }
-
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (tableView == self.menuTableView) {
+    if (tableView == menuTableView) {
         [self performSegueWithIdentifier:kSeguePushTC5ConversationCatalogViewController
                                   sender:nil];
     }
-    else {
+    else if (tableView == searchTableView) {
         TC5ConversationViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:
             NSStringFromClass([TC5ConversationViewController class])
         ];

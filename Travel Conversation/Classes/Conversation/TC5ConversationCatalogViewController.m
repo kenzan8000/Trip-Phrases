@@ -65,7 +65,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     NSString *text = [conversation nativeTitleText];
     return [TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17]
                                                            text:text
-                                                           size:CGSizeMake(self.tableView.frame.size.width-80/*240*/, MAXFLOAT)];
+                                                           size:CGSizeMake(tableView.frame.size.width-80, MAXFLOAT)];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -75,11 +75,11 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath
     if (!cell) {
         Class cellClass = [TC5ConversationCatalogTableViewCell class];
         cell = (TC5ConversationCatalogTableViewCell *)[UINib UIKitFromClass:cellClass];
-
-        cell.conversationTitleLabel.numberOfLines = 0;
         TC5Conversation *conversation = self.conversations[indexPath.row];
-        cell.conversationTitleLabel.text = [conversation nativeTitleText];
+        NSString *text = [conversation nativeTitleText];
+        cell.conversationTitleLabel.text = text;
         cell.categoryImageView.image = [conversation image];
+        cell.conversationTitleLabel.numberOfLines = ([TC5ConversationCatalogTableViewCell estimatedHeight:[UIFont systemFontOfSize:17] text:text size:CGSizeMake(tableView.frame.size.width-80, MAXFLOAT)] > [TC5ConversationCatalogTableViewCell TC5Height]) ? 0 : 1;
         [cell.conversationTitleLabel sizeToFit];
     }
 

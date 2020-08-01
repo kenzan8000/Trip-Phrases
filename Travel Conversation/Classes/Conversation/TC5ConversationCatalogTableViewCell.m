@@ -31,7 +31,7 @@
                                        options:NSStringDrawingUsesLineFragmentOrigin
                                        context:nil];
 
-    CGFloat margin = 15 * 2;
+    CGFloat margin = 13 * 2;
     return rect.size.height + margin;
 }
 
@@ -47,6 +47,7 @@
     [super layoutSubviews];
 
     CGRect frame = [self.conversationTitleLabel frame];
+    frame.origin = CGPointMake(frame.origin.x, 13);
     frame.size = CGSizeMake(self.conversationTitleLabel.frame.size.width, 0);
     [self.conversationTitleLabel setFrame:frame];
     [self.conversationTitleLabel sizeToFit];
