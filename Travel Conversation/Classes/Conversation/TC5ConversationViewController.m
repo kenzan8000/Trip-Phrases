@@ -85,7 +85,6 @@
     self.swipeView.pagingEnabled = YES;
     [self.swipeView scrollToPage:self.currentIndex
                         duration:0];
-
     [self.pickerView selectRow:0
                    inComponent:0
                       animated:NO];
@@ -145,6 +144,14 @@ numberOfRowsInComponent:(NSInteger)component
     return content;
 }
 
+- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSString *title = [self.pickerList objectAtIndex:row];
+    NSAttributedString *attString =
+        [[NSAttributedString alloc] initWithString:title attributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
+
+    return attString;
+}
 
 #pragma mark - SwipeViewDelegate
 - (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView
@@ -307,18 +314,15 @@ numberOfRowsInComponent:(NSInteger)component
     [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
-    CGFloat offset = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
-
     [self.soundSettingView setHidden:NO];
-    self.soundSettingView.frame = CGRectMake(0, -self.soundSettingCell.frame.size.height-offset, self.soundSettingView.frame.size.width, self.soundSettingView.frame.size.height);
-
+    self.soundSettingView.frame = CGRectMake(0, -self.soundSettingCell.frame.size.height, self.soundSettingView.frame.size.width, self.soundSettingView.frame.size.height);
 
     __weak __typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.32f
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^ () {
-        weakSelf.soundSettingView.frame = CGRectMake(0, offset, weakSelf.soundSettingView.frame.size.width, weakSelf.soundSettingView.frame.size.height);
+        weakSelf.soundSettingView.frame = CGRectMake(0, 0, weakSelf.soundSettingView.frame.size.width, weakSelf.soundSettingView.frame.size.height);
     }
                      completion:^ (BOOL finished) {
     }];
@@ -332,16 +336,14 @@ numberOfRowsInComponent:(NSInteger)component
     [self.settingBarButtonItem setTintColor:[UIColor whiteColor]];
     [self.settingBarButtonItem setImageInsets:UIEdgeInsetsMake(-4, -6, -4, 6)];
 
-    CGFloat offset = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
-
-    self.soundSettingView.frame = CGRectMake(0, offset, self.soundSettingView.frame.size.width, self.soundSettingView.frame.size.height);
+    self.soundSettingView.frame = CGRectMake(0, 0, self.soundSettingView.frame.size.width, self.soundSettingView.frame.size.height);
 
     __weak __typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.25f
                           delay:0.0f
                         options:UIViewAnimationOptionCurveEaseOut
                      animations:^ () {
-        weakSelf.soundSettingView.frame = CGRectMake(0, -weakSelf.soundSettingCell.frame.size.height-offset-40, weakSelf.soundSettingView.frame.size.width, weakSelf.soundSettingView.frame.size.height);
+        weakSelf.soundSettingView.frame = CGRectMake(0, -weakSelf.soundSettingCell.frame.size.height-40, weakSelf.soundSettingView.frame.size.width, weakSelf.soundSettingView.frame.size.height);
     }
                      completion:^ (BOOL finished) {
         [weakSelf.soundSettingView setHidden:YES];

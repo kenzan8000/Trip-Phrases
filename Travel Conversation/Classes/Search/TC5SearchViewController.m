@@ -43,6 +43,7 @@
     self.cellClasses = nil;
     self.searchCategories = nil;
     self.searchResults = nil;
+    [self.searchController.searchBar removeFromSuperview];
     self.searchController = nil;
     [self.searchTableView removeFromSuperview];
     self.searchTableView = nil;
@@ -96,18 +97,20 @@
     searchController.searchResultsUpdater = self;
     searchController.delegate = self;
     searchController.searchBar.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    searchController.hidesNavigationBarDuringPresentation = true;
+    searchController.hidesNavigationBarDuringPresentation = false;
     searchController.obscuresBackgroundDuringPresentation = false;
     searchController.searchBar.searchBarStyle = UISearchBarStyleProminent;
     searchController.searchBar.searchTextField.textColor = [UIColor blackColor];
     searchController.searchBar.searchTextField.backgroundColor = [UIColor whiteColor];
-    searchController.searchBar.backgroundColor = [UIColor colorWithHexadecimal:0x34495eff];
+    //searchController.searchBar.backgroundColor = [UIColor colorWithHexadecimal:0x34495eff];
+    //searchController.searchBar.backgroundColor = [UIColor whiteColor];
     searchController.searchBar.tintColor = [UIColor blackColor];
     searchController.searchBar.barTintColor = [UIColor colorWithHexadecimal:0x34495eff];
     [searchController.searchBar setShowsCancelButton:true];
     [searchController.searchBar sizeToFit];
     UIWindow *parent = [[UIApplication sharedApplication] windows][0];
-    searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, searchController.searchBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - searchController.searchBar.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height) style: UITableViewStylePlain];
+    searchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 0) style: UITableViewStylePlain];
+    [searchTableView setBackgroundColor:[UIColor whiteColor]];
     [searchTableView setHidden: true];
     [searchTableView setDelegate:self];
     [searchTableView setDataSource:self];
@@ -310,11 +313,13 @@ shouldReloadTableForSearchString:(NSString *)searchString
 - (void)willDismissSearchController:(UISearchController *)searchController
 {
     [searchTableView setHidden: true];
+    [searchController.searchBar removeFromSuperview];
 }
 
 - (void)didDismissSearchController:(UISearchController *)searchController
 {
     [searchTableView setHidden: true];
+    [searchController.searchBar removeFromSuperview];
 }
 
 - (void)presentSearchController:(UISearchController *)searchController
@@ -367,8 +372,9 @@ shouldReloadTableForSearchString:(NSString *)searchString
                                   sender:nil];
     }
     else if (barButtonItem == self.searchBarButtonItem) {
-        //[self.searchDisplayController.searchBar becomeFirstResponder];
         [self.view addSubview:searchController.searchBar];
+        [searchController.searchBar sizeToFit];
+        searchTableView.frame = CGRectMake(0, [UIApplication sharedApplication].statusBarFrame.size.height + self.navigationController.navigationBar.frame.size.height + searchController.searchBar.frame.origin.y + searchController.searchBar.frame.size.height, searchController.searchBar.frame.size.width, self.view.frame.size.height - (searchController.searchBar.frame.size.height));
         [searchController.searchBar becomeFirstResponder];
     }
 }

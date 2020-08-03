@@ -27,9 +27,10 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
         NSForegroundColorAttributeName:[UIColor whiteColor],
 NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:20.0f],
     }];
+    /*
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent
                                                 animated:NO];
-
+    */
     // launch count
     NSInteger launchCount = [[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsLaunchCount];
 
