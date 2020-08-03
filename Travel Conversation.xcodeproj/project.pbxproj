@@ -1074,7 +1074,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1113,7 +1113,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kenzan Hase (6RYZ4RB738)";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1143,7 +1143,7 @@
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1156,7 +1156,7 @@
 			baseConfigurationReference = 7E7E368E3A460B295112A786 /* Pods-Travel Conversation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = "";
@@ -1164,7 +1164,7 @@
 				GCC_PREFIX_HEADER = "Travel Conversation/Classes/Travel Conversation-Prefix.pch";
 				INFOPLIST_FILE = "Travel Conversation/Resources/Plists/Travel Conversation-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "cd687f70-de86-4c19-85d4-ef00fa2f5f98";
 				PROVISIONING_PROFILE_SPECIFIER = "";
